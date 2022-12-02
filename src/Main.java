@@ -69,5 +69,19 @@ public class Main {
         System.out.println("Если сбрасывать по 500 грамм в день, уйдёт "+if500PerDay+" дней");
         System.out.println("В среднем, должно уйти "+middleLose+" дней");
 
+        float increaseZp = 1.1f;
+        byte monthPerYear = 12;
+        int zpMasha = 67760;
+        int zpDenis = 83690;
+        int zpKristina = 76230;
+        float zpMashaIncr = zpMasha*increaseZp;
+        float zpDenisIncr = zpDenis*increaseZp;
+        float zpKristinaIncr = zpKristina*increaseZp;
+        float deltaMashaPerYear = zpMashaIncr*monthPerYear-(zpMasha*monthPerYear);
+        float deltaDenisPerYear = zpDenisIncr*monthPerYear-(zpDenis*monthPerYear);
+        float deltaKristinaPerYear = zpKristinaIncr*monthPerYear-(zpKristina*monthPerYear);
+        System.out.println("\nМаша теперь получает "+zpMashaIncr+" рублей. Годовой доход вырос на "+deltaMashaPerYear+" рублей");
+        System.out.println("Маша теперь получает "+zpDenisIncr+" рублей. Годовой доход вырос на "+deltaDenisPerYear+" рублей");
+        System.out.println("Маша теперь получает "+zpKristinaIncr+" рублей. Годовой доход вырос на "+deltaKristinaPerYear+" рублей");
     }
 }
