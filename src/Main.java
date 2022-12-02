@@ -55,9 +55,19 @@ public class Main {
         byte weightPlombir = 100;
         byte weightEgg = 70;
         int weightSumm = weightBanana*5+weightMilk*2+weightPlombir*2+weightEgg*4;
-        float weightInKg = weightSumm/1000f;
+        int grPerKg = 1000;
+        float weightInKg = weightSumm/(float)grPerKg;
         System.out.println("\nВес спорт-завтрака "+weightInKg+" кг");
 
+        short summLoseKg = 7;
+        int summLoseGr = summLoseKg*grPerKg;
+        int if250PerDay = summLoseGr/250;
+        int if500PerDay = summLoseGr/500;
+        float middleLose = summLoseGr/(float)((250+500)/2);
+        System.out.println("\nНужно сбросить "+summLoseKg+" кг");
+        System.out.println("Если сбрасывать по 250 грамм в день, уйдёт "+if250PerDay+" дней");
+        System.out.println("Если сбрасывать по 500 грамм в день, уйдёт "+if500PerDay+" дней");
+        System.out.println("В среднем, должно уйти "+middleLose+" дней");
 
     }
 }
