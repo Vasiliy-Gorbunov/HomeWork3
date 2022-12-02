@@ -50,5 +50,14 @@ public class Main {
         int brownPaint = classesInSchool*brownPerClass;
         System.out.println("\nВ школе, где "+classesInSchool+" классов, нужно "+whitePaint+" банок белой краски и "+brownPaint+" банок коричневой краски");
 
+        byte weightBanana = 80;
+        byte weightMilk = 105;
+        byte weightPlombir = 100;
+        byte weightEgg = 70;
+        int weightSumm = weightBanana*5+weightMilk*2+weightPlombir*2+weightEgg*4;
+        float weightInKg = weightSumm/1000f;
+        System.out.println("\nВес спорт-завтрака "+weightInKg+" кг");
+
+
     }
 }
