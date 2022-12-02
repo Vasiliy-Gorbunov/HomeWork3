@@ -30,6 +30,25 @@ public class Main {
         int paperPerPupil = summPaper/summPupils;
         System.out.println("\nНа каждого ученика рассчитано "+paperPerPupil+" листов бумаги");
 
+        byte effPer2Min = 16;
+        int effPer20Min = effPer2Min*10;
+        int effPerHour = effPer20Min*3;
+        int effPerDay = effPerHour*24;
+        int effPer3Days = effPerDay*3;
+        int effPerMonth = effPerDay*30;
+        System.out.println("\nЗа 20 минут работы машина произвела бутылок "+effPer20Min+" шт");
+        System.out.println("За сутки работы машина произвела бутылок "+effPerDay+" шт");
+        System.out.println("За 3 дня работы машина произвела бутылок "+effPer3Days+" шт");
+        System.out.println("За месяц работы машина произвела бутылок "+effPerMonth+" шт");
+
+        byte summPaint = 120;
+        byte whitePerClass = 2;
+        byte brownPerClass = 4;
+        int paintPerClass = whitePerClass+brownPerClass;
+        int classesInSchool = summPaint/paintPerClass;
+        int whitePaint = classesInSchool*whitePerClass;
+        int brownPaint = classesInSchool*brownPerClass;
+        System.out.println("\nВ школе, где "+classesInSchool+" классов, нужно "+whitePaint+" банок белой краски и "+brownPaint+" банок коричневой краски");
 
     }
 }
